@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <script>
+           
+        function add(no1,no2){
+            return no1+no2;
+        }
+        function sub(no1,no2){
+            return no1-no2;
+        }
+        function mul(no1,no2){
+            return no1*no2;
+        }
+        function div(no1,no2){
+            return no1/no2;
+        }
+        function clearScreen(){
+            document.getElementById("no1").value = "";
+            document.getElementById("no2").value = "";
+            document.getElementById("result").value = "";
+        }
+        function additon(){
+                
+            var no1 = parseInt(document.getElementById('no1').value);    
+            var no2 = parseInt(document.getElementById('no2').value);   
+            document.getElementById("result").value=add(no1,no2); 
+                   
+        }  
+        function substraction(){
+                
+                var no1 = parseInt(document.getElementById('no1').value);    
+                var no2 = parseInt(document.getElementById('no2').value);   
+                document.getElementById("result").value=sub(no1,no2); 
+                       
+        }
+        function multipication(){
+                
+                var no1 = parseInt(document.getElementById('no1').value);    
+                var no2 = parseInt(document.getElementById('no2').value);   
+                document.getElementById("result").value=mul(no1,no2); 
+                       
+        }
+        function division(){
+                
+                var no1 = parseInt(document.getElementById('no1').value);    
+                var no2 = parseInt(document.getElementById('no2').value);   
+                document.getElementById("result").value=div(no1,no2); 
+                       
+        }   
+              
+         
+           
+           
+        </script>
+    </head>
+    <body>
+       <label for="no1">Enter your first number</label>
+       <input type="text" id="no1" />
+       <br/>
+       <label for="no2">Enter your second number</label>
+       <input type="text" id="no2" />
+       <br/>
+       <input type="text" id="result" />
+       <button id="submit" onclick="additon()">addition</button>
+       <button id="submit" onclick="substraction()">substraction</button>
+       <button id="submit" onclick="multipication()">multipication</button>
+       <button id="submit" onclick="division()">division</button>
+       <button id="submit" onclick="clearScreen()">clearScreen</button>
+       
+
+
+          
+    
+    </body>
+</html>
